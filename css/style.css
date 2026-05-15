@@ -399,8 +399,23 @@ button a {
   width: 100%;
 }
 
-iframe{
+.map {
   width: 100%;
-  height: 300px;
-  
+  padding: 0;
+  margin: 0;
+}
+
+.mapbox {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-top: 8px solid #2b1539;
+  border-bottom: 8px solid #2b1539;
+}
+
+.mapbox iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(5%);
 }

@@ -1,15 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Glow Beauty</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
   <div class="logo">Glow Beauty</div>
 
@@ -28,20 +30,63 @@
     </ul>
   </nav>
 </header>
-<div class="form-part">
-  <form class="form-input">
-    <h1>Login</h1>
 
-    <input type="email" placeholder="Email Address">
-    <input type="password" placeholder="Password">
+<section class="hero">
+  <div class="hero-screen">
+    <span class="tag">Natural • Vegan • Glow</span>
+    <h1>Healthy Skin Starts With Pure Care</h1>
+    <p>Premium skincare products made for glowing and healthy skin.</p>
+    <button onclick="shopNow()">Shop Collection</button>
+  </div>
+</section>
 
-    <button type="submit">Login</button>
+<section class="categories">
+  <div class="c-squre">
+    <h3>Face Serum</h3>
+    <p>Hydrating vitamin-rich skincare.</p>
+  </div>
 
-    <p>Don't have an account?
-      <a href="register.html">Register</a>
-    </p>
-  </form>
-</div>
+  <div class="c-squre">
+    <h3>Night Cream</h3>
+    <p>Repair and nourish overnight.</p>
+  </div>
+
+  <div class="c-squre">
+    <h3>Face Wash</h3>
+    <p>Clean and refresh naturally.</p>
+  </div>
+</section>
+
+<section class="best-seller">
+  <div class="section-title">
+    <h2>Best Sellers</h2>
+    <p>Most loved skincare products.</p>
+  </div>
+
+  <div class="product-part">
+    <div class="p-card">
+      <div class="product-pic"></div>
+      <h3>Vitamin C Serum</h3>
+      <p>₹599</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="p-card">
+      <div class="product-pic"></div>
+      <h3>Hydrating Moisturizer</h3>
+      <p>₹799</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="p-card">
+      <div class="product-pic"></div>
+      <h3>Rice Water Face Wash</h3>
+      <p>₹499</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-part">
 
@@ -70,5 +115,6 @@
   <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

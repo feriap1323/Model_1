@@ -1,168 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="logo">Glow Beauty</div>
+  <head>
+    <meta charset="UTF-8" />
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="category.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="product-details.html">Details</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="payment.html">Payment</a></li>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-</header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<section class="best-seller">
-  <div class="section-title">
-    <h2>Our Products</h2>
-  </div>
+    <title>Products</title>
 
-  <div class="product-part">
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Glow Serum</h3>
-      <p>₹699</p>
-      <button>Buy Now</button>
-    </div>
+    <link rel="stylesheet" href="css/style.css" />
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Night Repair Cream</h3>
-      <p>₹899</p>
-      <button>Buy Now</button>
-    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Hydra Face Wash</h3>
-      <p>₹499</p>
-      <button>Buy Now</button>
-    </div>
-  </div>
-</section>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<section class="best-seller">
- 
-  <div class="product-part">
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Glow Serum</h3>
-      <p>₹699</p>
-      <button>Buy Now</button>
-    </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Night Repair Cream</h3>
-      <p>₹899</p>
-      <button>Buy Now</button>
-    </div>
+  <body>
+    <header>
+      <div class="logo">Glow Beauty</div>
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Hydra Face Wash</h3>
-      <p>₹499</p>
-      <button>Buy Now</button>
-    </div>
-  </div>
-</section>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="productdetalis.html">Details</a></li>
+          <li><a href="card.html">Cart</a></li>
+          <li><a href="payment.html">Payment</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<section class="best-seller">
- 
+    <section class="best-seller">
+      <div class="section-title">
+        <h2>Our Products</h2>
+      </div>
 
-  <div class="product-part">
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Glow Serum</h3>
-      <p>₹699</p>
-      <button>Buy Now</button>
-    </div>
+      <div class="product-part">
+        <div class="p-card">
+          <a href="productdetalis.html">
+            <div class="product-pic">
+              <img
+                src="photos/GLOW SLEEPING MASK.webp"
+                alt="Glow Sleeping Mask"
+              />
+            </div>
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Night Repair Cream</h3>
-      <p>₹899</p>
-      <button>Buy Now</button>
-    </div>
+            <h3>Glow Sleeping Mask</h3>
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Hydra Face Wash</h3>
-      <p>₹499</p>
-      <button>Buy Now</button>
-    </div>
-  </div>
-</section>
+            <p>₹699</p>
+          </a>
 
-<section class="best-seller">
-  
+          <button onclick="addToCart('Glow Sleeping Mask')">Add To Cart</button>
+        </div>
 
-  <div class="product-part">
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Glow Serum</h3>
-      <p>₹699</p>
-      <button>Buy Now</button>
-    </div>
+        <div class="p-card">
+          <a href="productdetalis.html">
+            <div class="product-pic">
+              <img
+                src="photos/retinoal night cream.webp"
+                alt="Night Repair Cream"
+              />
+            </div>
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Night Repair Cream</h3>
-      <p>₹899</p>
-      <button>Buy Now</button>
-    </div>
+            <h3>Retinol Night Cream With Vitamin C & Hyaluronic Acid</h3>
 
-    <div class="p-card">
-      <div class="product-pic"></div>
-      <h3>Hydra Face Wash</h3>
-      <p>₹499</p>
-      <button>Buy Now</button>
-    </div>
-  </div>
-</section>
+            <p>₹650</p>
+          </a>
 
+          <button onclick="addToCart('Night Repair Cream')">Add To Cart</button>
+        </div>
 
-<footer>
-  <div class="footer-part">
+        <div class="p-card">
+          <a href="productdetalis.html">
+            <div class="product-pic">
+              <img src="photos/nia face sream.webp" alt="Niacinamide Serum" />
+            </div>
 
-    <div>
-      <h3>Glow Beauty</h3>
-      <p>Luxury skincare products for glowing skin.</p>
-    </div>
+            <h3>
+              10% Niacinamide Face Serum With Kojic Acid & Korean Rice Water
+            </h3>
 
-    <div>
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="category.html">Categories</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
+            <p>₹646</p>
+          </a>
 
-    <div>
-      <h4>Customer Support</h4>
-      <p>Email: support@glowbeauty.com</p>
-      <p>Phone: +91 9876543210</p>
-    </div>
+          <button onclick="addToCart('Niacinamide Face Serum')">
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <footer>
+      <div class="footer-part">
+        <div>
+          <h3>Glow Beauty</h3>
 
-  <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
-</footer>
+          <p>Luxury skincare products for glowing skin.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+
+          <a href="home.html">Home</a>
+          <a href="category.html">Categories</a>
+          <a href="product.html">Products</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h4>Customer Support</h4>
+
+          <p>Email: support@glowbeauty.com</p>
+
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

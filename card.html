@@ -1,83 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="logo">Glow Beauty</div>
+  <head>
+    <meta charset="UTF-8" />
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="category.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="product-details.html">Details</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="payment.html">Payment</a></li>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-</header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<section class="cart-page">
+    <title>Cart</title>
 
-  <h1>Your Cart</h1>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <div class="cart-item">
-    <h3>Vitamin C Serum</h3>
-    <p>₹699</p>
-  </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <div class="cart-item">
-    <h3>Night Cream</h3>
-    <p>₹899</p>
-  </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <div class="total-box">
-    <h2>Total: ₹1598</h2>
-    <a href="payment.html">
-      <button>Proceed To Payment</button>
-    </a>
-  </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</section>
+  <body>
+    <header>
+      <div class="logo">Glow Beauty</div>
 
-<footer>
-  <div class="footer-part">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
 
-    <div>
-      <h3>Glow Beauty</h3>
-      <p>Luxury skincare products for glowing skin.</p>
-    </div>
+          <li><a href="category.html">Categories</a></li>
 
-    <div>
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="category.html">Categories</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
+          <li><a href="products.html">Products</a></li>
 
-    <div>
-      <h4>Customer Support</h4>
-      <p>Email: support@glowbeauty.com</p>
-      <p>Phone: +91 9876543210</p>
-    </div>
+          <li><a href="productdetalis.html">Details</a></li>
 
-  </div>
+          <li><a href="card.html">Cart</a></li>
 
-  <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
-</footer>
-</body>
+          <li><a href="payment.html">Payment</a></li>
+
+          <li><a href="order.html">Orders</a></li>
+
+          <li><a href="About.html">About</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cart-page">
+      <h1>Your Cart</h1>
+
+      <!-- ITEM 1 -->
+
+      <div class="cart-item">
+        <div class="cart-image">
+          <img src="photos/vitmin c sream.webp" alt="Vitamin C Serum" />
+        </div>
+
+        <div class="cart-info">
+          <h3>Vitamin C Serum</h3>
+
+          <p>₹<span class="price">645</span></p>
+
+          <div class="quantity-box">
+            <button onclick="decreaseQuantity(0)">-</button>
+
+            <span class="qty"> 1 </span>
+
+            <button onclick="increaseQuantity(0)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+
+      <div class="cart-item">
+        <div class="cart-image">
+          <img src="photos/retinoal night cream.webp" alt="Night Cream" />
+        </div>
+
+        <div class="cart-info">
+          <h3>Retinol Night Cream with Vitamin C & Hyaluronic Acid</h3>
+
+          <p>₹<span class="price">650</span></p>
+
+          <div class="quantity-box">
+            <button onclick="decreaseQuantity(1)">-</button>
+
+            <span class="qty"> 1 </span>
+
+            <button onclick="increaseQuantity(1)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOTAL -->
+
+      <div class="total-box">
+        <h2>Total: ₹<span id="total">1295</span></h2>
+
+        <a href="payment.html">
+          <button>Proceed To Payment</button>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-part">
+        <div>
+          <h3>Glow Beauty</h3>
+
+          <p>Luxury skincare products for glowing skin.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+
+          <a href="home.html">Home</a>
+
+          <a href="category.html">Categories</a>
+
+          <a href="products.html">Products</a>
+
+          <a href="About.html">About</a>
+
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h4>Customer Support</h4>
+
+          <p>Email: support@glowbeauty.com</p>
+
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

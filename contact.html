@@ -1,109 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="logo">Glow Beauty</div>
+  <head>
+    <meta charset="UTF-8" />
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="category.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="product-details.html">Details</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="payment.html">Payment</a></li>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-</header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Contact Us</title>
 
-<section class="contactbox">
+    <link rel="stylesheet" href="css/style.css" />
 
-  <div class="c-left">
-    <span class="c-tag">Get In Touch</span>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <h1>We'd Love To Hear From You</h1>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <p>
-      Have questions about skincare products or orders?
-      Our team is here to help you anytime.
-    </p>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="c-info">
-      <p>📧 support@glowbeauty.com</p>
-      <p>📞 +91 9876543210</p>
-      <p>📍 Ahmedabad, India</p>
-    </div>
-  </div>
+  <body>
+    <header>
+      <div class="logo">Glow Beauty</div>
 
-  <div class="c-right">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="productdetalis.html">Details</a></li>
+          <li><a href="card.html">Cart</a></li>
+          <li><a href="payment.html">Payment</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <form class="form2">
+    <section class="contactbox">
+      <div class="c-left">
+        <span class="c-tag"> Get In Touch </span>
 
-      <input type="text" placeholder="Full Name">
+        <h1>We'd Love To Hear From You</h1>
 
-      <input type="email" placeholder="Email Address">
+        <p>
+          Have questions about skincare products or orders? Our team is always
+          ready to help you.
+        </p>
 
-      <input type="text" placeholder="Phone Number">
+        <div class="c-info">
+          <p>📧 support@glowbeauty.com</p>
 
-      <textarea placeholder="Write Your Message"></textarea>
+          <p>📞 +91 9876543210</p>
 
-      <button type="submit">Send Message</button>
+          <p>📍 Ahmedabad, India</p>
+        </div>
+      </div>
 
-    </form>
+      <div class="c-right">
+        <form class="form2" onsubmit="sendMessage(event)">
+          <input type="text" id="name" placeholder="Full Name" required />
 
-  </div>
+          <input type="email" id="email" placeholder="Email Address" required />
 
-</section>
+          <input type="text" id="phone" placeholder="Phone Number" required />
 
-<section class="map">
+          <textarea
+            id="message"
+            placeholder="Write Your Message"
+            required
+          ></textarea>
 
-  <div class="mapbox">
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.1896936427206!2d72.53245407510623!3d23.090150779126457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e833aff138951%3A0xd3aa3f93ccd0661a!2sSilver%20Oak%20College%20Of%20Engineering%20And%20Technology%20Class%20Room%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1778865121556!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="map">
+      <div class="mapbox">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.1896936427206!2d72.53245407510623!3d23.090150779126457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e833aff138951%3A0xd3aa3f93ccd0661a!2sSilver%20Oak%20College%20Of%20Engineering%20And%20Technology%20Class%20Room%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1778865121556!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
 
-  </div>
+    <footer>
+      <div class="footer-part">
+        <div>
+          <h3>Glow Beauty</h3>
 
-</section>
-<footer>
-  <div class="footer-part">
+          <p>Luxury skincare products for glowing skin.</p>
+        </div>
 
-    <div>
-      <h3>Glow Beauty</h3>
-      <p>Luxury skincare products for glowing skin.</p>
-    </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="home.html">Home</a>
+          <a href="category.html">Categories</a>
+          <a href="product.html">Products</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
 
-    <div>
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="category.html">Categories</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
+        <div>
+          <h4>Customer Support</h4>
 
-    <div>
-      <h4>Customer Support</h4>
-      <p>Email: support@glowbeauty.com</p>
-      <p>Phone: +91 9876543210</p>
-    </div>
+          <p>Email: support@glowbeauty.com</p>
 
-  </div>
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
 
-  <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
-</footer>
-</body>
+      <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

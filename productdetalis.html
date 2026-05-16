@@ -1,77 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product detalis </title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="logo">Glow Beauty</div>
+  <head>
+    <meta charset="UTF-8" />
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="category.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="product-details.html">Details</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="payment.html">Payment</a></li>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="product-details">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="p-pic large"></div>
+    <title>Product Details</title>
 
-  <div class="product-info">
-    <h1>Vitamin C Serum</h1>
-    <p class="price">₹699</p>
+    <link rel="stylesheet" href="css/style.css" />
 
-    <p>
-      Brightens skin, removes dullness and gives natural glow.
-    </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <button>Add To Cart</button>
-  </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-</section>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <header>
+      <div class="logo">Glow Beauty</div>
 
-<footer>
-  <div class="footer-part">
+      <nav>
+        <ul>
+           <li><a href="home.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="productdetalis.html">Details</a></li>
+          <li><a href="card.html">Cart</a></li>
+          <li><a href="payment.html">Payment</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div>
-      <h3>Glow Beauty</h3>
-      <p>Luxury skincare products for glowing skin.</p>
-    </div>
+    <section class="product-details">
+      <div class="product-left">
+        <div class="p-pic large">
+          <img
+            src="photos/10% vitamin c face serum roll on.webp"
+            alt="Vitamin C Serum Roll On"
+          />
+        </div>
+      </div>
 
-    <div>
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="category.html">Categories</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
+      <div class="product-right">
+        <h1>Vitamin C Serum Roll On</h1>
 
-    <div>
-      <h4>Customer Support</h4>
-      <p>Email: support@glowbeauty.com</p>
-      <p>Phone: +91 9876543210</p>
-    </div>
+        <p class="price">₹899</p>
 
-  </div>
+        <p class="product-desc">
+          Brightens skin, reduces dullness, deeply hydrates, removes tired skin
+          and gives natural glowing skin.
+        </p>
 
-  <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
-</footer>
-</body>
+        <div class="quantity-box">
+          <button onclick="decreaseProductQty()">-</button>
+
+          <span id="productQty"> 1 </span>
+
+          <button onclick="increaseProductQty()">+</button>
+        </div>
+
+        <div class="product-buttons">
+          <button
+            class="cart-btn"
+            onclick="addToCart('Vitamin C Serum Roll On')"
+          >
+            Add To Cart
+          </button>
+
+          <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <h2>Related Products</h2>
+
+      <div class="product-part">
+        <div class="p-card">
+          <img src="photos/retinoal night cream.webp" alt="Night Cream" />
+
+          <h3>Retinol Night Cream with Vitamin C & Hyaluronic Acid</h3>
+
+          <p>₹650</p>
+        </div>
+
+        <div class="p-card">
+          <img src="photos/Rice face wash.webp" alt="Face Wash" />
+
+          <h3>Rice Face Wash</h3>
+
+          <p>₹499</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-part">
+        <div>
+          <h3>Glow Beauty</h3>
+
+          <p>Luxury skincare products for glowing skin.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+  <a href="home.html">Home</a>
+          <a href="category.html">Categories</a>
+          <a href="product.html">Products</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h4>Customer Support</h4>
+
+          <p>Email: support@glowbeauty.com</p>
+
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

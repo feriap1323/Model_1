@@ -1,83 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="logo">Glow Beauty</div>
+  <head>
+    <meta charset="UTF-8" />
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="category.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="product-details.html">Details</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="payment.html">Payment</a></li>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="category-part">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <h1>Shop By Category</h1>
+    <title>Categories</title>
 
-  <div class="category-skin">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <div class="c-squre">
-      <h3>Face Wash</h3>
-    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <div class="c-squre">
-      <h3>Serums</h3>
-    </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <div class="c-squre">
-      <h3>Moisturizers</h3>
-    </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="c-squre">
-      <h3>Sunscreen</h3>
-    </div>
+  <body>
+    <header>
+      <div class="logo">Glow Beauty</div>
 
-  </div>
-</section>
-<footer>
-  <div class="footer-part">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="productdetalis.html">Details</a></li>
+          <li><a href="card.html">Cart</a></li>
+          <li><a href="payment.html">Payment</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div>
-      <h3>Glow Beauty</h3>
-      <p>Luxury skincare products for glowing skin.</p>
-    </div>
+    <section class="category-part">
+      <h1>Shop By Category</h1>
 
-    <div>
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="category.html">Categories</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
+      <div class="category-skin">
+        <div class="c-squre" onclick="openCategory('facewash')">
+          <img src="photos/Rice face wash.webp" alt="Face Wash" />
 
-    <div>
-      <h4>Customer Support</h4>
-      <p>Email: support@glowbeauty.com</p>
-      <p>Phone: +91 9876543210</p>
-    </div>
+          <h3>Face Wash</h3>
+        </div>
 
-  </div>
+        <div class="c-squre" onclick="openCategory('serum')">
+          <img src="photos/nia face sream.webp" alt="Serums" />
 
-  <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
-</footer>
-</body>
+          <h3>Serums</h3>
+        </div>
+
+        <div class="c-squre" onclick="openCategory('moisturizer')">
+          <img src="photos/Red wine moisturizer.webp" alt="Moisturizers" />
+
+          <h3>Moisturizers</h3>
+        </div>
+
+        <div class="c-squre" onclick="openCategory('sunscreen')">
+          <img src="photos/nia glow sunscreen spf 50+.webp" alt="Sunscreen" />
+
+          <h3>Sunscreen</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-part">
+        <div>
+          <h3>Glow Beauty</h3>
+
+          <p>Luxury skincare products for glowing skin.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+
+          <a href="home.html">Home</a>
+          <a href="category.html">Categories</a>
+          <a href="product.html">Products</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h4>Customer Support</h4>
+
+          <p>Email: support@glowbeauty.com</p>
+
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

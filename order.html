@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Login</title>
+    <title>Orders</title>
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -25,7 +26,7 @@
       <nav>
         <ul>
           <li><a href="home.html">Home</a></li>
-          <li><a href="category.html">Categories</a></li>
+          <li><a href="category.HTML">Categories</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="productdetalis.html">Details</a></li>
           <li><a href="card.html">Cart</a></li>
@@ -38,28 +39,43 @@
       </nav>
     </header>
 
-    <div class="form-part">
-      <form class="form-input" onsubmit="loginUser(event)">
-        <h1>Login</h1>
+    <section class="orders">
+      <h1>My Orders</h1>
 
-        <input type="email" id="loginEmail" placeholder="Email Address" required/>
+      <div class="o-card">
+        <div class="order-image">
+          <img src="photos/vitmin c sream.webp" alt="Vitamin C Serum" />
+        </div>
 
-        <input type="password" id="loginPassword" placeholder="Password"  required/>
+        <div class="order-info">
+          <h3>Vitamin C Serum</h3>
 
-        <button type="submit">Login</button>
+          <p class="delivered">Delivered Successfully</p>
 
-        <p>
-          Don't have an account?
+          <button onclick="trackOrder()">Track Order</button>
+        </div>
+      </div>
 
-          <a href="register.html"> Register </a>
-        </p>
-      </form>
-    </div>
+      <div class="o-card">
+        <div class="order-image">
+          <img src="photos/retinoal night cream.webp" alt="Night Cream" />
+        </div>
+
+        <div class="order-info">
+          <h3>Night Repair Cream</h3>
+
+          <p class="shipping">Out For Delivery</p>
+
+          <button onclick="trackOrder()">Track Order</button>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-part">
         <div>
           <h3>Glow Beauty</h3>
+
           <p>Luxury skincare products for glowing skin.</p>
         </div>
 
@@ -85,6 +101,6 @@
       <p class="copyright">© 2026 Glow Beauty. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
